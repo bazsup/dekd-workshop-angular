@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dekd';
+  title = 'welcome dekd';
+  interns = ['Mackie', 'Boat', 'Bas']
+  clicked = false
+  onClick() {
+    this.clicked = !this.clicked
+  }
 }

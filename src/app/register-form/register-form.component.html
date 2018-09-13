@@ -1,0 +1,18 @@
+<p>
+  register-form works!
+</p>
+
+<form [formGroup]="registerForm">
+  <div>
+    <label>Name</label>
+    <input type="text" formControlName="name">
+  </div>
+  <div>
+    <label> Age </label>
+    <input type="number" formControlName="age">
+  </div>
+  {{ age }}
+  <p *ngIf="registerForm.get('age').invalid && registerForm.get('age').dirty">
+    Age is invalid
+  </p>
+</form>
